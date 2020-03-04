@@ -6,6 +6,8 @@
 const gulp = require("gulp");
 const server = require("browser-sync").create();
 const styles = require('./styles');
+const script = require('./script');
+const html = require('./html');
 
 module.exports = function serve(cb) {
   server.init({
