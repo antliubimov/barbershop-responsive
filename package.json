@@ -1,0 +1,41 @@
+{
+  "name": "barbershop-adaptive",
+  "version": "1.0.0",
+  "description": "Бородинский",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antliubimov/barbershop-responsive.git"
+  },
+  "keywords": [
+    "barber"
+  ],
+  "author": "antliubimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antliubimov/barbershop-responsive/issues"
+  },
+  "homepage": "https://github.com/antliubimov/barbershop-responsive#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "posthtml-include": "^1.4.0",
+    "run-sequence": "^2.2.1"
+  }
+}
