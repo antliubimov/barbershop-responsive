@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Запись на стрижку</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="inner-page">
+
+    <header class="page-header">
+      <div class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" alt="Логотип" width="370" height="153">
+        </picture>
+      </div>
+      <nav class="main-navigation main-navigation--closed">
+        <button class="main-navigation__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="photo.html">Наши работы</a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--active">
+              <a class="main-navigation__link main-navigation__link--active" href="#">Записаться</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Контакты</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Dramaretskiy</a>
+            </li>
+          </ul>
+          <ul class="user-navigation__list">
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="#">Войти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <section class="record">
+        <div class="record__wrapper">
+          <h2 class="record__headline">Запись на стрижку</h2>
+          <a class="record__to-index-btn button" href="#">На главную</a>
+          <form class="record__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="record__field record__field--fullname">
+              <input class="record__text record__text--fulname" type="text" name="surname" id="surname" placeholder="Фамилия">
+              <input class="record__text record__text--fulname" type="text" name="name" id="name" placeholder="Имя">
+              <input class="record__text record__text--fulname" type="text" name="patronymic" id="patronymic" placeholder="Отчество">
+            </div>
+            <div class="record__field record__field--contacts">
+              <input class="record__text record__text--contacts" type="tel" name="phone" id="phone" placeholder="Контактный телефон">
+              <input class="record__text record__text--contacts" type="email" name="email" id="email" placeholder="Контактный e-mail">
+            </div>
+            <div class="record__field record__field--comments">
+              <textarea class="record__text record__text--comments" name="comment" id="comment" rows="3" placeholder="Доп. информация для мастера"></textarea>
+            </div>
+            <fieldset class="record__beard-models">
+              <h3 class="record__subtitle">Выберите модель бороды:</h3>
+              <ul class="record__radio-buttons">
+                <li class="record__beard-model">
+                  <input type="radio" name="beard-model" id="admiral" value="admiral" checked>
+                  <label class="record__radio" for="admiral">адмирал</label>
+                  <img src="img/beard-admiral.svg" alt="адмирал">
+                </li>
+                <li class="record__beard-model">
+                  <input type="radio" name="beard-model" id="lumberjack" value="lumberjack">
+                  <label class="record__radio" for="lumberjack">лесоруб</label>
+                  <img src="img/beard-lumberjack.svg" alt="лесоруб">
+                </li>
+                <li class="record__beard-model">
+                  <input type="radio" name="beard-model" id="polar" value="polar">
+                  <label class="record__radio" for="polar">полярник</label>
+                  <img src="img/beard-polar.svg" alt="полярник">
+                </li>
+                <li class="record__beard-model">
+                  <input type="radio" name="beard-model" id="boyar" value="boyar">
+                  <label class="record__radio" for="boyar">боярин</label>
+                  <img src="img/beard-boyar.svg" alt="боярин">
+                </li>
+                <li class="record__beard-model">
+                  <input type="radio" name="beard-model" id="sage" value="sage">
+                  <label class="record__radio" for="sage">мудрец</label>
+                  <img src="img/beard-sage.svg" alt="мудрец">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="record__add-services">
+              <h3 class="record__subtitle record__subtitle--add-service">Дополнительные услуги:</h3>
+              <ul class="record__checkbox-buttons">
+                <li class="record__add-service">
+                  <input type="checkbox" name="add-service" id="paint-beard" value="paint-beard" checked>
+                  <label class="record__checkbox checkbox" for="paint-beard">Подкрасить бороду</label>
+                </li>
+                <li class="record__add-service">
+                  <input type="checkbox" name="add-service" id="wind-mustache" value="wind-mustache" checked>
+                  <label class="record__checkbox checkbox" for="wind-mustache">Накрутить усы</label>
+                </li>
+                <li class="record__add-service">
+                  <input type="checkbox" name="add-service" id="comb-beard" value="comb-beard">
+                  <label class="record__checkbox checkbox" for="comb-beard">Причесать бороду</label>
+                </li>
+                <li class="record__add-service">
+                  <input type="checkbox" name="add-service" id="straighten-hair" value="straighten-hair">
+                  <label class="record__checkbox checkbox" for="straighten-hair">Подровнять виски</label>
+                </li>
+                <li class="record__add-service">
+                  <input type="checkbox" name="add-service" id="remove-gray-hair" value="remove-gray-hair">
+                  <label class="record__checkbox checkbox" for="remove-gray-hair">Убрать седину</label>
+                </li>
+                <li class="record__add-service">
+                  <input type="checkbox" name="add-service" id="polish-bald" value="polish-bald">
+                  <label class="record__checkbox checkbox" for="polish-bald">Отполировать лысину</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="record__submit" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__contacts contacts">
+            <b class="contacts__headline">Барбершоп Бородинский</b>
+            <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+          </div>
+          <div class="page-footer__social social">
+            <span class="page-footer__social-title">Давайте дружить!</span>
+            <ul class="social__list">
+              <li class="social__item social__item--vkontakte">
+                <a class="social__link" href="#">Мы в вконтакте</a>
+              </li>
+              <li class="social__item social__item--facebook">
+                <a class="social__link" href="#">Мы в фейсбуке</a>
+              </li>
+              <li class="social__item social__item--instagram">
+                <a class="social__link" href="#">Мы в инстаграме</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <span class="copyright__text">Разработано:</span>
+            <a class="copyright__link" href="#">Dramaretskiy</a>
+          </div>
+        </div>
+      </footer>
+
+      <section class="modal-login">
+        <div class="modal-login__wrapper">
+          <h2 class="modal-login__headline">Личный кабинет</h2>
+          <p class="modal-login__description">Введите свой логин и пароль, чтобы войти</p>
+          <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="login">
+              <input class="modal-login__text" type="text" name="login" id="login" placeholder="Логин">
+            </label>
+            <label for="password">
+              <input class="modal-login__text" type="password" name="passcode" id="password" placeholder="Пароль">
+            </label>
+            <input type="checkbox" name="remember-me" id="remember">
+            <label class="modal-login__checkbox checkbox" for="remember">Запомните меня</label>
+            <a class="modal-login__forgot" href="#">Я забыл пароль!</a>
+            <button class="modal-login__submit" type="submit">Войти</button>
+            <button class="modal-login__close" type="button">Закрыть</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="modal-failure">
+        <div class="modal-failure__wrapper">
+          <h2 class="modal-failure__headline">Неудача</h2>
+          <p class="modal-failure__description">Что-то пошло не так. <br> Проверьте выделенные красным поля формы.</p>
+          <button class="modal-failure__toggle" type="button">Ок</button>
+        </div>
+      </section>
+
+      <section class="modal-success">
+        <div class="modal-success__wrapper">
+          <h2 class="modal-success__headline">Это успех!</h2>
+          <p class="modal-success__description">Ваша заявка отправлена. <br> Ожидайте, мы свяжемся с вами как только будет минутка.</p>
+          <button class="modal-success__toggle" type="button">Закрыть окно</button>
+        </div>
+      </section>
+
+      <script type="text/javascript" src="js/script.min.js">
+
+
+  </body>
+</html>
